@@ -1,0 +1,44 @@
+.progress-container {
+    display: inline-block;
+    margin: 3px /* Crappy way of centering it */
+}
+.progress-border {
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
+    padding: 0;
+    background-color: #4a4e56;
+}
+
+.progress-fill {
+    width: 150px;
+    height: 10px;
+    background-color: #5f5;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.task-container {
+    margin-bottom: 30px;
+}
+
+.task-label {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+.task-score {
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    text-align: end;
+    width: 120px;
+}
+
+.greyed-out {
+    color: #6c6f78;
+}

@@ -1,0 +1,22 @@
+.section-header {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.line {
+    background-color: #6c6f78;
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    margin: 5px;
+    margin-right: 10px;
+}
+.section-description {
+    color: #6c6f78;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.tasks-container {
+    padding: 30px;
+}

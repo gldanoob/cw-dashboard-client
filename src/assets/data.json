@@ -1,0 +1,26 @@
+{
+    "name": "Week 01",
+    "desc": "CS is hard",
+    "tasks": [
+        {
+            "name": "Segmentation Fault fix",
+            "score": 60,
+            "total": 100
+        },
+        {
+            "name": "Getting enough sleep",
+            "score": 20,
+            "total": 500
+        },
+        {
+            "name": "Avoiding plagiarism",
+            "score": 0,
+            "total": 20
+        },
+        {
+            "name": "Outsmarting Tim",
+            "score": 100,
+            "total": 100
+        }
+    ]
+}

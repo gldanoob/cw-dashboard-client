@@ -1,3 +1,3 @@
 # TEST
 
-## just testing if I can push this
+Fiddle with `src/assets/data.json` to get started
