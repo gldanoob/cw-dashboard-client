@@ -7,11 +7,10 @@ interface Prop {
 }
 
 export function ProgressBar(props: Prop) {
-    const red = [255, 50, 50];
-    const green = [50, 255, 50];
+    const red = 0;
+    const green = 160;
 
-    // Weighted sum of rgb value
-    const mix = red.map((v, i) => v * (1 - props.fill) + green[i] * props.fill);
+    const mix = red * (1 - props.fill) + green * props.fill
     return (
         <div className="progress-container">
             <div className="progress-border" style={{
@@ -19,7 +18,7 @@ export function ProgressBar(props: Prop) {
             }}>
                 <div className="progress-fill" style={{
                     width: props.fill * WIDTH + 'px',
-                    backgroundColor: `rgb(${mix.join(',')})`
+                    backgroundColor: `hsl(${mix}, 100%, 50%)`
                 }}></div>
             </div>
         </div>

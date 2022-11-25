@@ -1,5 +1,4 @@
 .progress-container {
-    display: inline-block;
     margin: 3px /* Crappy way of centering it */
 }
 .progress-border {
@@ -22,21 +21,28 @@
     margin-bottom: 30px;
 }
 
+.inline-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1000px;
+}
+
 .task-label {
     color: white;
-    font-size: 28px;
-    margin: 0;
+    font-size: 25px;
+    margin: 10px;
 }
 
 .task-score {
+    width: 120px;
     color: white;
     font-size: 25px;
-    display: inline-block;
     margin: 0;
     padding: 0;
     padding-right: 20px;
     text-align: end;
-    width: 120px;
 }
 
 .greyed-out {

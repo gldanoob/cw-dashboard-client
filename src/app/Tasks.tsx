@@ -13,10 +13,12 @@ export default function TaskProgress(props: Props) {
             <p className="task-label">
                 {props.name}
             </p>
-            <p className="task-score">
-                {props.score}<span className="greyed-out">/{props.total}</span>
-            </p>
-            <ProgressBar fill={props.score / props.total}></ProgressBar>
+            <div className="inline-container">
+                <p className="task-score">
+                    {props.score}<span className="greyed-out">/{props.total}</span>
+                </p>
+                <ProgressBar fill={props.score / props.total}></ProgressBar>
+            </div>
         </div>
     )
 }

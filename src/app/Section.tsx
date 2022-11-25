@@ -1,5 +1,5 @@
 import '../style/Section.css'
-import TaskProgress from "./TaskProgress"
+import TaskProgress from "./Tasks"
 
 interface Task {
     name: string,
@@ -22,10 +22,13 @@ export default function Section(props: Props) {
                 {props.desc}
             </p>
             {/* For indentation */}
-            <div className="tasks-container">
-                {props.tasks.map(
-                    (task, i) => <TaskProgress name={task.name} score={task.score} total={task.total} key={i}/>
-                )}
+            <div className="tasks-block">
+                <div className='vertical-line'></div>
+                <div className="tasks-container">
+                    {props.tasks.map(
+                        (task, i) => <TaskProgress name={task.name} score={task.score} total={task.total} key={i} />
+                    )}
+                </div>
             </div>
         </div>
     )

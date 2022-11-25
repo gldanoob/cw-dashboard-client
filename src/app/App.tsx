@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import data from '../assets/data.json';
 import '../style/App.css';
+import Header from './Header';
 import Section from './Section';
 
 function App() {
@@ -15,14 +16,19 @@ function App() {
 
   }, [])
 
-  data.tasks[0].score = progress;
-  data.tasks[2].score = (20 - progress / 5) | 0;
+  data.sections[0].tasks[0].score = progress;
+  data.sections[1].tasks[2].score = (progress / 5) | 0;
 
   return (
 
     <div className="App">
       <div className="App-body">
-        <Section name={data.name} desc={data.desc} tasks={data.tasks} />
+        <Header desc={data.desc}>
+          {data.header}
+        </Header>
+        {
+          data.sections.map(section => <Section name={section.name} desc={section.desc} tasks={section.tasks} />)
+        }
       </div>
     </div>
   );
