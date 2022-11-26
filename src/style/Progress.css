@@ -1,0 +1,14 @@
+.progress-border {
+    height: 0.5em;
+    border-radius: 0.25em;
+    padding: 0;
+    background-color: #4a4e56;
+}
+
+.progress-fill {
+    height: 0.5em;
+    background-color: #5f5;
+    border-radius: 0.25em;
+    margin: 0;
+}
+

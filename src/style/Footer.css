@@ -1,0 +1,7 @@
+.footer-container {
+    font-size: 1.5em;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    align-self: flex-end;
+}

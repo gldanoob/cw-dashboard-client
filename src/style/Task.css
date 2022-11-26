@@ -1,24 +1,5 @@
-.progress-container {
-    margin: 3px /* Crappy way of centering it */
-}
-.progress-border {
-    width: 500px;
-    height: 10px;
-    border-radius: 5px;
-    padding: 0;
-    background-color: #4a4e56;
-}
-
-.progress-fill {
-    width: 150px;
-    height: 10px;
-    background-color: #5f5;
-    border-radius: 5px;
-    margin: 0;
-}
-
 .task-container {
-    margin-bottom: 30px;
+    margin-bottom: 2em;
 }
 
 .inline-container {
@@ -26,25 +7,48 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 1000px;
 }
 
 .task-label {
     color: white;
-    font-size: 25px;
-    margin: 10px;
+    font-size: 1.5rem;
+    margin: 0.5em;
 }
 
 .task-score {
-    width: 120px;
+    display: flex;
+    width: 5em;
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
-    padding-right: 20px;
-    text-align: end;
+    padding-right: 1.25em;
+    align-items: center;
+    justify-content: right;
 }
 
 .greyed-out {
     color: #6c6f78;
+}
+
+@media (max-width: 810px) {
+    .task-label {
+        margin-left: calc(0.5em - 32px + 4vw);
+    } 
+}
+
+@media (max-width: 550px) {
+    .task-label {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+    .task-score {
+        padding-right: 0;
+        justify-self: right;
+    }
+    .inline-container {
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    
 }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
+html {
+  font-size: 12px;
+}
+
 body {
   margin: 0;
   font-family: 'DM Mono', -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Oxygen',
@@ -13,4 +17,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-

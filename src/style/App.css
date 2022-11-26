@@ -1,13 +1,24 @@
 .App-body {
     background-color: #282c34;
     min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 0;
+    padding-top: 5em;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    align-items: center;
+    justify-content: start;
     color: white;
-    overflow: hidden;
+}
+
+.content {
+    align-items: left;
+    flex-grow: 0;
+}
+
+@media (max-width: 550px) {
+    .content {
+        align-items: center;
+        margin: 1em;
+    }
 }

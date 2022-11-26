@@ -1,23 +1,27 @@
-import '../style/Task.css';
+import '../style/Progress.css';
 
-const WIDTH = 500;
+const WIDTH = 30
 
 interface Prop {
-    fill: number;
+    fill: number
 }
 
 export function ProgressBar(props: Prop) {
-    const red = 0;
-    const green = 160;
-
+    const isMobile = window.innerWidth < 550
+    const red = 0
+    const green = 160
     const mix = red * (1 - props.fill) + green * props.fill
+
+    const borderWidth = isMobile? '100%' : WIDTH + 'em'
+    const fillWidth = isMobile? props.fill * 100 + '%' : props.fill * WIDTH + 'em'
+
     return (
         <div className="progress-container">
             <div className="progress-border" style={{
-                width: WIDTH + 'px'
+                width: borderWidth 
             }}>
                 <div className="progress-fill" style={{
-                    width: props.fill * WIDTH + 'px',
+                    width: fillWidth,
                     backgroundColor: `hsl(${mix}, 100%, 50%)`
                 }}></div>
             </div>
