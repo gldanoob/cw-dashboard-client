@@ -1,56 +1,118 @@
 {
-    "header": "CS101",
-    "desc": "nice description",
-    "sections": [
+    "modules": [
         {
-            "name": "Week 01",
-            "desc": "CS is hard",
-            "tasks": [
+            "name": "CS101",
+            "desc": "nice description",
+            "sections": [
                 {
-                    "name": "Segmentation Fault fix",
-                    "score": 60,
-                    "total": 100
+                    "name": "Week 01",
+                    "desc": "CS is hard",
+                    "tasks": [
+                        {
+                            "name": "Segmentation Fault fix",
+                            "score": 60,
+                            "total": 100
+                        },
+                        {
+                            "name": "Getting enough sleep",
+                            "score": 20,
+                            "total": 500
+                        },
+                        {
+                            "name": "Avoiding plagiarism",
+                            "score": 0,
+                            "total": 20
+                        },
+                        {
+                            "name": "Outsmarting Tim",
+                            "score": 50,
+                            "total": 100
+                        }
+                    ]
                 },
                 {
-                    "name": "Getting enough sleep",
-                    "score": 20,
-                    "total": 500
-                },
-                {
-                    "name": "Avoiding plagiarism",
-                    "score": 0,
-                    "total": 20
-                },
-                {
-                    "name": "Outsmarting Tim",
-                    "score": 50,
-                    "total": 100
+                    "name": "Week 02",
+                    "desc": "I'm dropping out",
+                    "tasks": [
+                        {
+                            "name": "Fixing memory leaks",
+                            "score": 60,
+                            "total": 100
+                        },
+                        {
+                            "name": "Switching degrees",
+                            "score": 40,
+                            "total": 500
+                        },
+                        {
+                            "name": "Failing pipeline",
+                            "score": 0,
+                            "total": 20
+                        },
+                        {
+                            "name": "Angry emails to Tim",
+                            "score": 100,
+                            "total": 100
+                        }
+                    ]
                 }
             ]
         },
         {
-            "name": "Week 02",
-            "desc": "I'm dropping out",
-            "tasks": [
+            "name": "CS102",
+            "desc": "another description",
+            "sections": [
                 {
-                    "name": "Fixing memory leaks",
-                    "score": 60,
-                    "total": 100
+                    "name": "Week 01",
+                    "desc": "CS is great",
+                    "tasks": [
+                        {
+                            "name": "Segmentation Fault fix",
+                            "score": 100,
+                            "total": 100
+                        },
+                        {
+                            "name": "Getting enough sleep",
+                            "score": 400,
+                            "total": 500
+                        },
+                        {
+                            "name": "Avoiding plagiarism",
+                            "score": 0,
+                            "total": 20
+                        },
+                        {
+                            "name": "Outsmarting Tim",
+                            "score": 50,
+                            "total": 100
+                        }
+                    ]
                 },
                 {
-                    "name": "Switching degrees",
-                    "score": 40,
-                    "total": 500
-                },
-                {
-                    "name": "Failing pipeline",
-                    "score": 0,
-                    "total": 20
-                },
-                {
-                    "name": "Angry emails to Tim",
-                    "score": 100,
-                    "total": 100
+                    "name": "Week 02",
+                    "desc": "I'm staying",
+                    "tasks": [
+                        {
+                            "name": "Fixing memory leaks",
+                            "score": 60,
+                            "total": 100
+                        },
+                        {
+                            "name": "Switching degrees",
+                            "score": 40,
+                            "total": 500
+                        },
+                        {
+                            "name": "Failing pipeline",
+                            "score": 0,
+                            "total": 20
+                        },
+                        {
+                            "name": "Angry emails to Tim",
+                            "score": 100,
+                            "total": 100
+                        }
+                    ]
                 }
             ]
         }
