@@ -7,7 +7,7 @@ interface Prop {
 }
 
 export function ProgressBar(props: Prop) {
-    const isMobile = window.innerWidth < 550
+    const isMobile = window.innerWidth <= 550
     const red = 0
     const green = 160
     const mix = red * (1 - props.fill) + green * props.fill
