@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import '../style/Header.css'
 
 interface Props {
-    children: string,
+    children: ReactNode,
     desc: string
 }
 

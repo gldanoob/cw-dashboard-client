@@ -1,19 +1,14 @@
 import '../style/Section.css'
-import TaskProgress from "./Tasks"
+import {TaskProgress, TaskData} from "./Tasks"
 
-interface Task {
-    name: string,
-    score: number,
-    total: number
-}
 
-interface Props {
+export interface SectionData {
     name: string,
     desc: string,
-    tasks: Task[]
+    tasks: TaskData[]
 }
 
-export default function Section(props: Props) {
+export function Section(props: SectionData) {
     return (
         <div className="section-container">
             <p className="section-header">{props.name}</p>
