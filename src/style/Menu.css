@@ -1,0 +1,26 @@
+.menu {
+    position: fixed;
+    left: 10em;
+    top: 50%;
+    /* CSS is weird */
+    transform: translate(0, -50%);
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+}
+
+.menu-item {
+    width: inherit;
+    border: 1px solid #6c6f78;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1em;
+    font-size: 2em;
+    text-align: left;
+}
+
+.menu-item:hover {
+    background-color: #6c6f78;
+}
