@@ -1,14 +1,14 @@
 import '../style/Task.css';
 import { ProgressBar } from './ProgressBar';
 
-interface Props {
+export interface TaskData {
     name: string
     score: number
     total: number
 }
 
-export default function TaskProgress(props: Props) {
-    const isMobile = window.innerWidth < 550
+export function TaskProgress(props: TaskData) {
+    const isMobile = window.innerWidth <= 550
 
     if (isMobile) return (
         <div className="task-container">
