@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import '../style/Footer.css'
 
 interface Props {
-    children: string
+    children: ReactNode
 }
 
 export default function Footer(props: Props) {
