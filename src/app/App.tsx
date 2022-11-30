@@ -3,8 +3,8 @@ import data from '../assets/data.json';
 import '../style/App.css';
 import Footer from './Footer';
 import Link from './Link';
+import Menu from './Menu';
 import Module from './Module';
-import Menu from './Menu'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 						<Routes>
 							{
 								data.modules.map(
-										(module, i) =>
+									(module, i) =>
 										<Route path={'/' + module.name} element={
 											<Module name={module.name} desc={module.desc} sections={module.sections}></Module>
 										} key={i}>
