@@ -1,6 +1,6 @@
 # Coursework Dashboard
 
-Hosted at <https://cw-dashboard-4b5b2.web.app/>
+Hosted at <https://cw-dashboard-4b5b2.web.app/mod/CS101>
 
 Fiddle with `src/assets/data.json` to get started
 

@@ -3,6 +3,7 @@ import data from '../assets/data.json';
 import '../style/App.css';
 import Footer from './Footer';
 import Link from './Link';
+import Login from "./Login";
 import Menu from './Menu';
 import Module from './Module';
 
@@ -19,15 +20,18 @@ function App() {
 							{
 								data.modules.map(
 									(module, i) =>
-										<Route path={'/' + module.name} element={
+										<Route path={'/mod/' + module.name} element={
 											<Module name={module.name} desc={module.desc} sections={module.sections}></Module>
 										} key={i}>
 										</Route>
 								)
 							}
-
 							<Route path="/" element={
-								<Module name={defaultModule.name} desc={defaultModule.desc} sections={defaultModule.sections}></Module>
+								// <Module name={defaultModule.name} desc={defaultModule.desc} sections={defaultModule.sections}></Module>
+								<Login></Login>
+							}></Route>
+							<Route path="/callback" element={
+								<Login callback></Login>
 							}></Route>
 
 							<Route path="*" element={<div>MODULE NOT FOUND</div>}></Route>

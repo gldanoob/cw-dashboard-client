@@ -8,7 +8,7 @@ export interface TaskData {
 }
 
 export function TaskProgress(props: TaskData) {
-    const isMobile = window.innerWidth <= 550
+    const isMobile: boolean = window.innerWidth <= 550
 
     if (isMobile) return (
         <div className="task-container">
