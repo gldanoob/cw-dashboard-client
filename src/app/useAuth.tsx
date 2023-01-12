@@ -2,11 +2,11 @@ import { URLSearchParams } from "url";
 
 const AUTH_URL = 'https://projects.cs.nott.ac.uk/oauth/authorize'
 const CLIENT_ID = 'af4b383a1680e13f18320deadda4838b0a2cc60978b1b1526fcfef110e4d9cc1';
-const REDIRECT_URI = 'http://localhost:3000/callback';
+const REDIRECT_URI = 'https://cw-dashboard-4b5b2.web.app/callback';
 const SCOPE = 'read_repository';
 const STATE_KEY = 'oauth2-state';
 
-const CALLBACK_URL = 'https://google.com';
+const CALLBACK_URL = 'https://cw-dashboard-4b5b2.web.app/mod/CS101';
 
 const genState = () => {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
