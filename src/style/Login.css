@@ -3,7 +3,7 @@
     font-size: 2rem;
 }
 
-.login-button {
+.login-button:hover {
     text-decoration: underline;
     cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import { useLocation, useSearchParams } from 'react-router-dom';
 import useAuth from './useAuth';
+import '../style/Login.css'
 
 interface Props {
     callback?: boolean;
@@ -22,7 +23,4 @@ export default function Login(props: Props) {
             </div>
         </div>
     )
-
-
-
 }
